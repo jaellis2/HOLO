@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='ASCII'?>                                               
+<ParameterList name="profugus MC input">                                               
+  <ParameterList name="MESH">                                               
+    <Parameter name="x_edges" type="Array(double)" value="{0.000000,0.020000,0.040000,0.060000,0.080000,0.100000,0.120000,0.140000,0.160000,0.180000,0.200000,0.220000,0.240000,0.260000,0.280000,0.300000,0.320000,0.340000,0.360000,0.380000,0.400000,0.420000,0.440000,0.460000,0.480000,0.500000,0.520000,0.540000,0.560000,0.580000,0.600000,0.620000,0.640000,0.660000,0.680000,0.700000,0.720000,0.740000,0.760000,0.780000,0.800000,0.820000,0.840000,0.860000,0.880000,0.900000,0.920000,0.940000,0.960000,0.980000,1.000000}"/>                                               
+    <Parameter name="y_edges" type="Array(double)" value="{0.0, .020000}"/>                                               
+    <Parameter name="z_edges" type="Array(double)" value="{0.0, .020000}"/>                                               
+    <Parameter name="matids"  type="Array(int)" value="{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}"/>                                               
+  </ParameterList>                                               
+  <ParameterList name="SOURCE">                                               
+    <Parameter name="general_source" type="TwoDArray(double)" value="50x1:{1.285921,1.509622,1.671185,1.792954,1.899374,1.976831,2.058029,2.118680,2.187235,2.241248,2.265803,2.301434,2.321216,2.341253,2.374000,2.381650,2.406368,2.418769,2.429797,2.457481,2.465741,2.465967,2.463526,2.469779,2.474532,2.479971,2.468377,2.471715,2.459375,2.441223,2.424337,2.413522,2.409520,2.386263,2.369994,2.355423,2.333861,2.316587,2.270001,2.226833,2.212259,2.181580,2.119182,2.058047,1.974970,1.880278,1.780828,1.663802,1.506494,1.292523}"/>                                               
+  </ParameterList>                                                 
+<ParameterList name="MATERIAL">                                               
+    <Parameter name="xs library" type="string" value="my_xs_1G.xml"/>                                               
+    <Parameter name="mat list" type="Array(string)" value="{scatterer}"/>                                               
+  </ParameterList>                                               
+  <ParameterList name="PROBLEM">                                               
+    <Parameter name="problem_name" type="string" value="inf_med"/>                                               
+    <Parameter name="output_geometry" type="bool" value="true"/>                                               
+    <Parameter name="do_transport" type="bool" value="true"/>                                               
+    <ParameterList name="cell_tally_db">                                               
+      <Parameter name="cells" type="Array(int)" value="{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49}"/>                                               
+    </ParameterList>                                               
+    <ParameterList name="current_tally_db">                                                
+      <Parameter name="x_edges" type="Array(double)" value="{0.000000,0.020000,0.040000,0.060000,0.080000,0.100000,0.120000,0.140000,0.160000,0.180000,0.200000,0.220000,0.240000,0.260000,0.280000,0.300000,0.320000,0.340000,0.360000,0.380000,0.400000,0.420000,0.440000,0.460000,0.480000,0.500000,0.520000,0.540000,0.560000,0.580000,0.600000,0.620000,0.640000,0.660000,0.680000,0.700000,0.720000,0.740000,0.760000,0.780000,0.800000,0.820000,0.840000,0.860000,0.880000,0.900000,0.920000,0.940000,0.960000,0.980000,1.000000}"/>                                               
+      <Parameter name="y_edges" type="Array(double)" value="{0.0, .020000}"/>                                               
+      <Parameter name="z_edges" type="Array(double)" value="{0.0, .020000}"/>                                                 
+    </ParameterList>                                               
+    <Parameter name="Np" type="int" value="1000000"/>                                               
+    <!--    <Parameter name="num_cycles" type="int" value="1"/>                                               
+    <Parameter name="num_inactive_cycles" type="int" value="1"/>                                               
+    -->                                               
+    <Parameter name="boundary" type="string" value="reflect"/>                                               
+    <ParameterList name="boundary_db">                                               
+       <Parameter name="reflect" type="Array(int)" value="{0, 0, 1, 1, 1, 1}"/>                                               
+    </ParameterList>                                                
+  </ParameterList>                                               
+</ParameterList>                                               
+                                               

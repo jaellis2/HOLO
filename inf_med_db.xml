@@ -1,0 +1,30 @@
+<ParameterList name="inf_med-PROBLEM">
+  <Parameter docString="" id="0" isDefault="false" isUsed="true" name="problem_name" type="string" value="inf_med"/>
+  <Parameter docString="" id="1" isDefault="false" isUsed="true" name="output_geometry" type="bool" value="true"/>
+  <Parameter docString="" id="2" isDefault="false" isUsed="true" name="do_transport" type="bool" value="true"/>
+  <ParameterList id="4" name="cell_tally_db">
+    <Parameter docString="" id="3" isDefault="false" isUsed="true" name="cells" type="Array(int)" value="{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49}"/>
+  </ParameterList>
+  <ParameterList id="8" name="current_tally_db">
+    <Parameter docString="" id="5" isDefault="false" isUsed="true" name="x_edges" type="Array(double)" value="{0.00000000000000000e+00, 2.00000000000000004e-02, 4.00000000000000008e-02, 5.99999999999999978e-02, 8.00000000000000017e-02, 1.00000000000000006e-01, 1.19999999999999996e-01, 1.40000000000000013e-01, 1.60000000000000003e-01, 1.79999999999999993e-01, 2.00000000000000011e-01, 2.20000000000000001e-01, 2.39999999999999991e-01, 2.60000000000000009e-01, 2.80000000000000027e-01, 2.99999999999999989e-01, 3.20000000000000007e-01, 3.40000000000000024e-01, 3.59999999999999987e-01, 3.80000000000000004e-01, 4.00000000000000022e-01, 4.19999999999999984e-01, 4.40000000000000002e-01, 4.60000000000000020e-01, 4.79999999999999982e-01, 5.00000000000000000e-01, 5.20000000000000018e-01, 5.40000000000000036e-01, 5.60000000000000053e-01, 5.79999999999999960e-01, 5.99999999999999978e-01, 6.19999999999999996e-01, 6.40000000000000013e-01, 6.60000000000000031e-01, 6.80000000000000049e-01, 6.99999999999999956e-01, 7.19999999999999973e-01, 7.39999999999999991e-01, 7.60000000000000009e-01, 7.80000000000000027e-01, 8.00000000000000044e-01, 8.19999999999999951e-01, 8.39999999999999969e-01, 8.59999999999999987e-01, 8.80000000000000004e-01, 9.00000000000000022e-01, 9.20000000000000040e-01, 9.39999999999999947e-01, 9.59999999999999964e-01, 9.79999999999999982e-01, 1.00000000000000000e+00}"/>
+    <Parameter docString="" id="6" isDefault="false" isUsed="true" name="y_edges" type="Array(double)" value="{0.00000000000000000e+00, 2.00000000000000004e-02}"/>
+    <Parameter docString="" id="7" isDefault="false" isUsed="true" name="z_edges" type="Array(double)" value="{0.00000000000000000e+00, 2.00000000000000004e-02}"/>
+  </ParameterList>
+  <Parameter docString="" id="9" isDefault="false" isUsed="true" name="Np" type="int" value="1000000"/>
+  <Parameter docString="" id="10" isDefault="false" isUsed="true" name="boundary" type="string" value="reflect"/>
+  <ParameterList id="12" name="boundary_db">
+    <Parameter docString="" id="11" isDefault="false" isUsed="true" name="reflect" type="Array(int)" value="{0, 0, 1, 1, 1, 1}"/>
+  </ParameterList>
+  <Parameter docString="" id="13" isDefault="true" isUsed="true" name="seed" type="int" value="32442"/>
+  <Parameter docString="" id="14" isDefault="true" isUsed="true" name="g_first" type="int" value="0"/>
+  <Parameter docString="" id="15" isDefault="true" isUsed="true" name="g_last" type="int" value="0"/>
+  <Parameter docString="" id="16" isDefault="true" isUsed="true" name="implicit_capture" type="bool" value="true"/>
+  <Parameter docString="" id="17" isDefault="true" isUsed="true" name="check_balance" type="bool" value="false"/>
+  <Parameter docString="" id="18" isDefault="true" isUsed="true" name="variance reduction" type="string" value="roulette"/>
+  <Parameter docString="" id="19" isDefault="true" isUsed="true" name="weight_cutoff" type="double" value="2.50000000000000000e-01"/>
+  <Parameter docString="" id="20" isDefault="true" isUsed="true" name="weight_survival" type="double" value="5.00000000000000000e-01"/>
+  <Parameter docString="" id="21" isDefault="false" isUsed="true" name="problem_type" type="string" value="fixed"/>
+  <Parameter docString="" id="22" isDefault="true" isUsed="true" name="mc_diag_frac" type="double" value="1.10000000000000009e+00"/>
+  <Validators/>
+</ParameterList>
+
